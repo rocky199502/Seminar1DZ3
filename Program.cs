@@ -6,7 +6,17 @@ namespace DZ3seminar1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Введите число: ");
+            string first = Console.ReadLine();
+            int number1 = int.Parse(first);
+            if ((number1 % 2) == 0)
+            {
+                Console.WriteLine("Вы ввели четное число!");
+            }
+            else
+            {
+                Console.WriteLine("Вы ввели нечетное число!");
+            }
         }
     }
 }
